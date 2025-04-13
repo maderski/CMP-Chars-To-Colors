@@ -1,6 +1,8 @@
 package org.maderskitech.cmpcharstocolors.application
 
 import android.app.Application
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
 import org.maderskitech.cmpcharstocolors.di.initKoin
 
 class CMPCharsToColorsApp : Application() {
