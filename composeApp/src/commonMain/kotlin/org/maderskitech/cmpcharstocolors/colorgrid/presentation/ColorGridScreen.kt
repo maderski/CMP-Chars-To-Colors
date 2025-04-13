@@ -9,7 +9,7 @@ import org.maderskitech.cmpcharstocolors.colorgrid.presentation.composables.Colo
 fun ColorGridScreen() {
     KoinContext {
         val viewModel = koinViewModel<ColorGridViewModel>()
-        val colorIntList = viewModel.getColorIntList("Hello World!", 5)
-        ColorGridComposable(5, colorIntList)
+        val colorList = viewModel.getColorList("Hello World!", 5)
+        ColorGridComposable(5, colorList)
     }
 }

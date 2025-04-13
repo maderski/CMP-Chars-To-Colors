@@ -14,19 +14,19 @@ import androidx.compose.ui.graphics.Color
 @Composable
 fun ColorGridComposable(
     columnCount: Int,
-    colorIntList: List<Int>
+    colorList: List<Color>
 ) {
     LazyVerticalGrid(
         columns = GridCells.Fixed(columnCount),
         modifier = Modifier.fillMaxSize()
     ) {
         items(
-            items = colorIntList
-        ) { colorInt ->
+            items = colorList
+        ) { color ->
             Box(
                 modifier = Modifier
                     .aspectRatio(1f)
-                    .background(Color(colorInt))
+                    .background(color)
             )
         }
     }
