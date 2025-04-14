@@ -36,7 +36,10 @@ fun ColorGridComposable(
     }
 }
 
-@HotPreview
+@HotPreview(
+    name = "phone light", group = "light", widthDp = 411, heightDp = 891,
+    fontScale = 1.5f, density = 2.625f, darkMode = false
+)
 @Composable
 fun ColorGridComposablePreview() {
     val colorList = listOf(
