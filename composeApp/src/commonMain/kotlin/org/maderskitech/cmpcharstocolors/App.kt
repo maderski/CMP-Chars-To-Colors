@@ -1,7 +1,9 @@
 package org.maderskitech.cmpcharstocolors
 
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.maderskitech.cmpcharstocolors.colorgrid.presentation.ColorGridScreen
 
@@ -9,6 +11,9 @@ import org.maderskitech.cmpcharstocolors.colorgrid.presentation.ColorGridScreen
 @Preview
 fun App() {
     MaterialTheme {
-        ColorGridScreen()
+        ColorGridScreen(
+            modifier = Modifier
+                .safeDrawingPadding()
+        )
     }
 }
