@@ -28,11 +28,14 @@ class MainActivity : ComponentActivity() {
             var isDark = isSystemInDarkTheme()
             var backgroundColor = if (isDark) Color.Black else Color.White
             UpdateStatusBarForTheme(this@MainActivity, isDark)
-            Box(modifier = Modifier.fillMaxSize().background(backgroundColor))
+            Box(modifier = Modifier
+                .fillMaxSize()
+                .background(backgroundColor))
             App()
         }
     }
 }
+
 @Composable
 fun UpdateStatusBarForTheme(activity: Activity, isDarkTheme: Boolean) {
     val view = LocalView.current
@@ -58,7 +61,6 @@ fun UpdateStatusBarForTheme(activity: Activity, isDarkTheme: Boolean) {
         }
     }
 }
-
 
 @Preview
 @Composable
